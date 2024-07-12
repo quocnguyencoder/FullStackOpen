@@ -1,0 +1,18 @@
+GET http://localhost:3003/api/blogs
+
+###
+
+POST http://localhost:3003/api/blogs
+content-type: application/json
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IlNoYWRvdyIsImlkIjoiNjY3MTJmNTI1NDUwOTgzZTM5NDk3ZDc5IiwiaWF0IjoxNzE4Njk3MDU0LCJleHAiOjE3MTg3MDA2NTR9.it83PzckuFIGHK6X6y2kUOdOJiNu6r7b65Xf_VLVNvs
+
+{
+    "title": "Hello 123",
+    "author": "No name",
+    "url": "http://hello.com",
+    "likes": 1
+}
+###
+DELETE  http://localhost:3003/api/blogs/667147f08f92ec5bdfd610b2
+content-type: application/json
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IlNoYWRvdyIsImlkIjoiNjY3MTJmNTI1NDUwOTgzZTM5NDk3ZDc5IiwiaWF0IjoxNzE4Njk3MDU0LCJleHAiOjE3MTg3MDA2NTR9.it83PzckuFIGHK6X6y2kUOdOJiNu6r7b65Xf_VLVNvs

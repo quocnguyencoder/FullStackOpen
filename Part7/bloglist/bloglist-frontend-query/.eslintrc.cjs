@@ -1,0 +1,35 @@
+module.exports = {
+  root: true,
+  env: {
+    browser: true,
+    es2020: true,
+    "vitest-globals/env": true,
+  },
+  extends: [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:react/jsx-runtime",
+    "plugin:react-hooks/recommended",
+    "plugin:prettier/recommended",
+    "plugin:vitest-globals/recommended",
+  ],
+  ignorePatterns: ["dist", ".eslintrc.cjs"],
+  parserOptions: { ecmaVersion: "latest", sourceType: "module" },
+  settings: { react: { version: "18.2" } },
+  plugins: ["react-refresh"],
+  rules: {
+    eqeqeq: "error",
+    "no-trailing-spaces": "error",
+    "arrow-spacing": ["error", { before: true, after: true }],
+    "no-console": "off",
+    "react/react-in-jsx-scope": "off",
+    "react/prop-types": "off",
+    "no-unused-vars": "off",
+    // Turn off conflicting ESLint rules with Prettier
+    indent: "off",
+    "linebreak-style": "off",
+    quotes: "off",
+    semi: "off",
+    "object-curly-spacing": "off",
+  },
+};
